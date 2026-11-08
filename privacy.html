@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>砚白 New Tab 隐私政策</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --text: #1c1c1e;
+        --muted: #6c6c70;
+        --line: rgba(60, 60, 67, 0.18);
+        --bg: #f5f5f7;
+        --card: #ffffff;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --text: #f5f5f7;
+          --muted: #a1a1a6;
+          --line: rgba(235, 235, 245, 0.18);
+          --bg: #0f0f10;
+          --card: #1c1c1e;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+          "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        color: var(--text);
+        background: var(--bg);
+      }
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+      article {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 32px 28px;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 28px;
+        line-height: 1.25;
+      }
+      .meta {
+        margin: 0 0 28px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      h2 {
+        margin: 28px 0 10px;
+        font-size: 18px;
+      }
+      p,
+      li {
+        margin: 0 0 12px;
+      }
+      ul {
+        margin: 0 0 12px;
+        padding-left: 1.2em;
+      }
+      a {
+        color: #0a84ff;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <h1>砚白 New Tab 隐私政策</h1>
+        <p class="meta">生效日期：2026年11月8日 · 开发者：砚白</p>
+
+        <p>
+          「砚白 New Tab」是一款 Chrome
+          新标签页扩展。我们重视你的隐私。本政策说明扩展如何处理相关数据。
+        </p>
+
+        <h2>1. 我们收集哪些信息</h2>
+        <p>扩展主要在你的浏览器本地保存以下信息：</p>
+        <ul>
+          <li>界面与功能设置（如壁纸、时钟、搜索、Dock、天气开关等）</li>
+          <li>你添加的 Dock 快捷方式名称与网址</li>
+          <li>记事本内容（仅保存在本地）</li>
+          <li>你手动输入的天气城市名称及对应坐标</li>
+          <li>壁纸与天气的本地缓存（用于加快显示）</li>
+        </ul>
+        <p>扩展<strong>不会</strong>要求你注册账号，也<strong>不会</strong>收集姓名、电话、邮箱等身份信息。</p>
+
+        <h2>2. 信息如何使用</h2>
+        <ul>
+          <li>本地保存的设置用于恢复你的新标签页体验，并可通过 Chrome 同步在同一账号的设备间同步部分设置</li>
+          <li>城市名称/坐标仅用于向天气与地理编码服务请求天气数据</li>
+          <li>壁纸来源为必应每日壁纸接口时，会请求相关图片元数据与图片文件以便展示</li>
+          <li>Dock 图标可能通过 Google 公开图标服务获取网站图标</li>
+        </ul>
+
+        <h2>3. 第三方服务</h2>
+        <p>
+          为提供功能，扩展会在你的设备上直接请求下列第三方服务（数据由对应服务按其自身政策处理）：
+        </p>
+        <ul>
+          <li>必应相关接口（每日壁纸）</li>
+          <li>Open-Meteo（天气与地理编码）</li>
+          <li>OpenStreetMap Nominatim、Photon（城市搜索）</li>
+          <li>Google Favicon / gstatic（网站图标）</li>
+        </ul>
+        <p>
+          开发者<strong>不运营</strong>用于收集你个人数据的自有服务器；上述请求不经过开发者后端转发。
+        </p>
+
+        <h2>4. 本地文件夹权限</h2>
+        <p>
+          若你选择「本地壁纸」并授权某个文件夹，扩展仅在本地读取其中的图片文件用于展示。该权限由浏览器管理，关闭浏览器后可能需要重新授权。扩展不会把本地文件夹中的图片上传到开发者服务器。
+        </p>
+
+        <h2>5. 数据存储与删除</h2>
+        <ul>
+          <li>设置与内容保存在浏览器的 <code>chrome.storage</code>、IndexedDB 等本地存储中</li>
+          <li>你可随时在扩展设置中修改、导出或导入配置</li>
+          <li>卸载扩展或在浏览器中清除扩展数据，即可删除相关本地数据</li>
+        </ul>
+
+        <h2>6. 权限说明</h2>
+        <ul>
+          <li><strong>storage</strong>：保存设置、Dock、记事本与缓存</li>
+          <li><strong>host_permissions</strong>：仅用于访问上述第三方接口与图标资源，不会读取你的普通网页浏览内容</li>
+        </ul>
+
+        <h2>7. 儿童隐私</h2>
+        <p>本扩展不面向 13 岁以下儿童，也不会有意收集儿童的个人信息。</p>
+
+        <h2>8. 政策更新</h2>
+        <p>
+          我们可能适时更新本政策。更新后会在本页面调整「生效日期」。继续使用扩展即表示你了解更新后的政策。
+        </p>
+
+        <h2>9. 联系方式</h2>
+        <p>
+          如对本政策有疑问，请通过 Chrome 网上应用店该扩展详情页的「支持」渠道联系开发者「砚白」。
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
