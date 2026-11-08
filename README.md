@@ -1,0 +1,1 @@
+# yanbai-newtab-privacy
